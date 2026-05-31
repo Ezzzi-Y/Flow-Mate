@@ -87,5 +87,6 @@ com.github.ezziy/
 - **预览：** 可视化组件应添加 `@Preview` Composable。
 - **版本目录：** Gradle 文件中通过 `libs.xxx` 引用依赖。
 - **文档语言：** 所有文档用中文编写。
+- **App 风格：** 视觉风格必须简约、高级。
 
 
