@@ -59,25 +59,26 @@ com.github.ezziy/
 
 目标架构：单 Activity + Compose Navigation 导航，每个页面一个 ViewModel，Repository 模式管理数据。暂无 DI 框架，按需引入 Hilt 或手动依赖注入。
 
-## 视觉设计：水彩风格
+## 视觉设计：Apple 风格
 
-所有 UI 必须遵循 `.claude/skills/watercolor-style/SKILL.md` 中定义的水彩设计规范。以下是 Compose 中对应的设计 Token：
+所有页面与组件必须遵循 `.claude/skills/apple-style/SKILL.md` 中定义的 Apple 风格规范。
+以下是 Compose 中对应的设计 Token：
 
 | Token | 值 | Compose 对应 |
 |---|---|---|
-| 主背景色 | `#faf8f5` | Surface / background |
-| 次背景色 | `#f0ebe3` | 卡片 / 浮层 surface |
-| 主文字色 | `#3a3a3a` | OnSurface |
-| 主按钮色 | `#4a6fa5` 80% 透明度 | Primary container |
-| 玫瑰晕染 | `#b4788c` 10% 透明度 | 强调卡片变体 |
-| 鼠尾草晕染 | `#78a082` 10% 透明度 | 强调卡片变体 |
-| 边框色 | `#4a6fa5` 20% 透明度 | Outline |
-| 圆角半径 | 16dp–24dp | 对应 `rounded-2xl` 到 `rounded-3xl` |
-| 阴影 | 柔和漫射，低透明度 | `ambientColor` / `spotColor` 约 12-15% |
+| 主背景色 | `#F5F5F7` | Surface / background |
+| 次背景色 | `#FFFFFF` 80% 透明度 | 卡片 / 浮层 surface |
+| 主文字色 | `#1D1D1F` | OnSurface |
+| 次文字色 | `#86868B` | OnSurfaceVariant |
+| 主按钮色 | `#0071E3` | Primary |
+| 次按钮色 | `#E5E5EA` | Secondary container |
+| 边框色 | `#E5E7EB` | Outline |
+| 圆角半径 | 20dp–24dp | 对应 `rounded-2xl` |
+| 阴影 | 微妙、低透明度 | 约 4-12% |
 
-**UI 禁忌：** 直角（0dp 圆角）、纯黑背景、硬边投影、粗体/重字重、粗边框。始终使用柔和、圆润、半透明的风格。
+**UI 禁忌：** 渐变背景、重阴影、粗边框、过多颜色、花哨装饰。保持克制、清爽、精致的视觉秩序。
 
-字体：标题使用衬线风格（轻字重、宽字距），正文使用无衬线轻字重。
+字体：统一使用项目内字体资源（PingFang），由 `Type.kt` 控制字重与字距。
 
 ## 关键约定
 
@@ -88,5 +89,6 @@ com.github.ezziy/
 - **版本目录：** Gradle 文件中通过 `libs.xxx` 引用依赖。
 - **文档语言：** 所有文档用中文编写。
 - **App 风格：** 视觉风格必须简约、高级。
+- **页面规范：** 所有页面必须遵守 Apple 风格 Skill（`.claude/skills/apple-style/SKILL.md`）。
 
 
