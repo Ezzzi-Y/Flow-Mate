@@ -86,3 +86,6 @@ com.github.ezziy/
 - **主题：** 所有内容必须包裹在 `FlawMateTheme {}` 中。主题在 API 31+ 支持动态取色。
 - **预览：** 可视化组件应添加 `@Preview` Composable。
 - **版本目录：** Gradle 文件中通过 `libs.xxx` 引用依赖。
+- **文档语言：** 所有文档用中文编写。
+
+
